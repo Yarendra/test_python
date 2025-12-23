@@ -1,9 +1,12 @@
-from flask import Flask 
+"""
+    Flask simple application
+"""
+from flask import Flask
 
 app = Flask(__name__)
-
 @app.route("/")
-def Helo_WOrd():
+def hello():
+    """ Return the hello world on the index route """
     return "hello world"
 
 if __name__ == "__main__":
